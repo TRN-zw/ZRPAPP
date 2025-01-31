@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8">
+		<title>Finger Print Form</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="colorlib.com">
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" th:href="@{/form/fonts/material-design-iconic-font/css/material-design-iconic-font.css}">
+
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" th:href="@{/form/css/style.css}">
+	</head>
+	<body>
+		<div class="wrapper">
+            <form method="post" th:action="@{/insert}"  object="${fingerPrintForm}" name="formReg" id="wizard">
+        		<!-- SECTION 1 -->
+                <h2></h2>
+                <section>
+                    <div class="inner">
+						<div class="image-holder">
+							<img th:src="@{/form/images/finger1.jpg}" alt="">
+						</div>
+						<div class="form-content" >
+							<div class="form-header">
+								<h3>Fingerprint Form Registration</h3>
+							</div>
+							<p>Please fill with your details</p>
+							<div class="form-row">
+								<div class="form-holder">
+									<input type="text" name="fullName" id="fullName" placeholder="Full Name" class="form-control">
+								</div>
+								<div class="form-holder">
+									<input type="text" placeholder="Alias" name="alias" id="alias" class="form-control">
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-holder">
+									<input type="text"  name="race" id="race" placeholder="Race" class="form-control">
+								</div>
+								<div class="form-holder">
+									<input type="text" name="registeredNumber" id="registeredNumber" placeholder="Registered Number" class="form-control">
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-holder">
+									<input type="text" name="officeOffIssue" id="officeOfIssue" placeholder="Office Of Issue" class="form-control">
+								</div>
+								<div class="form-holder">
+									<input type="text" name="dateOfIssue" id="dateOfIssue" placeholder="Date Of Issue" class="form-control">
+								</div>
+							</div>
+						</div>
+					</div>
+                </section>
+
+				<!-- SECTION 2 -->
+                <h2></h2>
+                <section>
+                    <div class="inner">
+						<div class="image-holder">
+							<img th:src="@{/form/images/finger2.jpg}" alt="">
+						</div>
+						<div class="form-content">
+							<div class="form-header">
+								<h3>Fingerprint Form Registration</h3>
+							</div>
+							<p>Please fill with additional info</p>
+							<div class="form-row">
+								<div class="form-holder w-100">
+									<input type="text" name="reasonForSearch" id="reasonForSearch" placeholder="Reason For Search" class="form-control">
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-holder">
+									<input type="text" name="nicNumber" id="nicNumber" placeholder="N.I.C Number" class="form-control">
+								</div>
+								<div class="form-holder">
+									<input type="text" name="district" id="district" placeholder="District" class="form-control">
+								</div>
+							</div>
+
+							<div class="form-row">
+								<div class="form-holder w-100">
+									<input type="text" name="additionalDocumentsOfIdentity" id="additionalDocumentsOfIdentity" placeholder="Additional Documents Of Identity" class="form-control">
+								</div>
+							</div>
+						</div>
+					</div>
+                </section>
+
+				<!-- SECTION 3 -->
+				<h2></h2>
+				<section>
+					<div class="inner">
+						<div class="image-holder">
+							<img th:src="@{/form/images/finger3.jpg}" alt="">
+						</div>
+						<div class="form-content" >
+							<div class="form-header">
+								<h3>Fingerprint Form Registration</h3>
+							</div>
+							<p>Please fill with your details</p>
+							<div class="form-row">
+								<div class="form-holder">
+									<input type="text" name="districtOfOrigin" id="districtOfOrigin" placeholder="District Of Origin" class="form-control">
+								</div>
+								<div class="form-holder">
+									<input type="text" placeholder="Country Of Origin" name="countryOfOrigin" id="countryOfOrigin" class="form-control">
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-holder">
+									<input type="text"  name="dateAndPlaceOfBirth" id="dateAndPlaceOfBirth" placeholder="Date And Place Of Birth" class="form-control">
+								</div>
+								<div class="form-holder">
+									<input type="number" name="height" id="height" placeholder="Height" class="form-control">
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-holder w-100">
+									<input type="text" name="visibleIdentifyingMarksOfDeformities" id="visibleIdentifyingMarksOfDeformities" placeholder="Visible Identifying Marks Of Deformities" class="form-control">
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</section>
+
+                <!-- SECTION 4 -->
+                <h2></h2>
+                <section>
+                    <div class="inner">
+						<div class="image-holder">
+							<img th:src="@{/form/images/finger4.jpg}" alt="">
+						</div>
+						<div class="form-content">
+							<div class="form-header">
+								<h3>Fingerprint Form Registration</h3>
+							</div>
+							<div class="form-row">
+								<div class="form-holder w-100">
+									<input type="text" name="passportNoAndCountryOfOrigin" id="passportNoAndCountryOfOrigin" placeholder="Passport No And Country Of Origin" class="form-control">
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-holder">
+								<label>Date Of Passport Issue</label>
+								</div>
+								<div class="form-holder">
+									<input type="text" name="dateOfPassIssue" id="dateOfPassIssue" class="form-control">
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-holder">
+								<label>Sex</label>
+								</div>
+								<div class="form-holder" style="align-self: flex-end; transform: translateY(4px);">
+									<div class="checkbox-tick">
+										<label class="male">
+											<input type="radio" name="sex" id="male" value="male" checked> Male<br>
+											<span class="checkmark"></span>
+										</label>
+										<label class="female">
+											<input type="radio" name="sex" id="female" value="female"> Female<br>
+											<span class="checkmark"></span>
+										</label>
+									</div>
+								</div>
+						</div>
+					</div>
+                </section>
+            </form>
+		</div>
+
+		<!-- JQUERY -->
+		<script th:src="@{/form/js/jquery-3.3.1.min.js}"></script>
+
+		<!-- JQUERY STEP -->
+		<script th:src="@{/form/js/jquery.steps.js}"></script>
+		<script th:src="@{/form/js/main.js}"></script>
+		<!-- <script> document.getElementById('wizard').submit();</script> -->
+		<!-- Template created and distributed by Colorlib -->
+</body>
+</html>
